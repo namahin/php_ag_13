@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Here the new route that displays a simple "Hello, World!" message.
+
+Route::get('/newRoute ', function () {
+    return 'Hello, World!';
+});
